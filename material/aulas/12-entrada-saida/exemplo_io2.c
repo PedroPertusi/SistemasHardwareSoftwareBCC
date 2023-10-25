@@ -7,6 +7,8 @@
 /* Standard C */
 #include <stdio.h>
 
+
+
 int main (int argc, char *argv[]) {
     char arq1[100]; // nomes do arquivo, recebido via scanf
     char buf[1]; // local usado para guardar os dados lidos de arq1

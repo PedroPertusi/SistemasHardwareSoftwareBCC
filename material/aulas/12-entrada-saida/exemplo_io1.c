@@ -13,10 +13,16 @@ int main (int argc, char *argv[]) {
     
     scanf("%s", arq1);
     int fd1 = open(arq1, O_RDONLY);
-    for (int i = 0; i < 5; i++) {
+
+    for (int i = 0; i < sizeof(arq1); i++) {
         read(fd1, buf, 1);
-        printf("Caracter lido: %c\n", buf[0]);
+        printf("%c\n", buf[0]);
     }
+
+    // for (int i = 0; i < 5; i++) {
+    //     read(fd1, buf, 1);
+    //     printf("Caracter lido: %c\n", buf[0]);
+    // }
     close(fd1);
     
     return 0;

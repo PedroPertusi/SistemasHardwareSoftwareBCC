@@ -12,9 +12,8 @@ int main() {
 
     filho = fork();
     if (filho == 0) {
-        int i = 1/0;
-        printf("valor: %d\n", i);
-        printf("Divisão por zero!\n");
+        printf("Filho: %d\n", getpid());
+        while(1);
     }
     else {
         int wstatus;
