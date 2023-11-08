@@ -1,0 +1,20 @@
+# Parte 1
+Ex1: 4 processos
+
+Ex2: 
+* Pai: f1 7525 f2 7526 counter 6
+        FIM 7525
+
+* Filho1: f1 0 f2 7527 counter 8
+            FIM 7525
+
+* Filho2: f1 7525 f2 0 counter 2
+            fim 7526
+
+* Filho3: f1 0 f2 0 counter 4
+            fim 7527
+
+Ex3: 
+        Não é valido por que o fim do Pai (pid 137) está antes.
+        Olhando os wait os prints tem que ser, os 4 primeiros print em tanto faz a ordem
+        e depois obrigatoriamente o fim do filho2 e filho3 antes do filho1 e pai 
